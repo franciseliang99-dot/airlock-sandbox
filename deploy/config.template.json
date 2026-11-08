@@ -1,0 +1,27 @@
+{
+  "listen": {"host": "127.0.0.1", "port": 8080},
+  "public_origin": "https://__HOST__",
+  "cookie_secure": true,
+  "trusted_proxy_header": "X-Forwarded-For",
+  "data_dir": "/var/lib/airlock",
+  "samples_manifest": "/opt/airlock/samples/manifest.json",
+  "docker_cmd": ["docker"],
+  "remove_leftover_containers": true,
+  "inference": {
+    "base_url": "https://api.vultrinference.com/v1",
+    "model": "__MODEL__",
+    "action_mode": "text",
+    "api_key_env": null,
+    "api_key_file": "/etc/airlock/inference.key",
+    "request_timeout_s": 120,
+    "max_retries": 2,
+    "price_in_usd_per_mtok": __PRICE_IN__,
+    "price_out_usd_per_mtok": __PRICE_OUT__
+  },
+  "agent": {"max_steps": 25, "wall_clock_s": 300, "max_tokens": 1024,
+            "image": "airlock-sandbox:dev", "runtime": "runsc", "limits": {}},
+  "quotas": {"session_tasks_per_day": 10, "session_tokens_per_day": 200000, "session_max_active": 3,
+             "global_tokens_per_day": 2000000, "usd_cap": 1.5, "max_queued": 20, "max_running": 1,
+             "ip_sessions_per_hour": 10, "ip_tasks_per_hour": 30},
+  "retention": {"task_retention_s": 82800, "session_ttl_s": 43200, "purge_interval_s": 300}
+}

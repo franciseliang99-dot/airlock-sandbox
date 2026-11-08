@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Airlock: watch an AI agent work inside a sealed sandbox</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="logo" aria-hidden="true">⛶</span> Airlock</div>
+  <p class="tag">An AI coding agent works on a sample repo inside a one-shot gVisor sandbox with no network and no secrets. You see every action and the blast radius, and you decide whether the patch leaves.</p>
+  <div id="quota" class="quota" aria-live="polite"></div>
+</header>
+
+<main>
+  <section class="card" id="start">
+    <h2>1 · Pick a repo and a task</h2>
+    <div class="row">
+      <label for="sample">Sample repo</label>
+      <select id="sample"></select>
+    </div>
+    <p id="sample-desc" class="muted"></p>
+    <div id="presets" class="presets" role="list"></div>
+    <details id="custom">
+      <summary>…or write your own instruction</summary>
+      <textarea id="instruction" maxlength="2000" rows="4" placeholder="e.g. Add a median() function with tests."></textarea>
+      <div class="row end"><span id="count" class="muted">0 / 2000</span><button id="run-custom" type="button">Run my instruction</button></div>
+    </details>
+    <p id="start-msg" class="msg" role="status"></p>
+  </section>
+
+  <section class="card" id="task" hidden>
+    <h2>2 · Watch the agent <span id="status" class="pill"></span></h2>
+    <p id="task-instruction" class="instr"></p>
+    <ol id="timeline" class="timeline" aria-live="polite"></ol>
+  </section>
+
+  <section class="card" id="report" hidden>
+    <h2>3 · Blast radius</h2>
+    <div id="report-body"></div>
+  </section>
+
+  <section class="card" id="review" hidden>
+    <h2>4 · Review the diff</h2>
+    <p id="diff-meta" class="muted"></p>
+    <pre id="diff" class="diff"></pre>
+    <div class="row end">
+      <span id="review-state" class="pill"></span>
+      <button id="reject" type="button" class="secondary">Reject</button>
+      <button id="approve" type="button">Approve</button>
+      <a id="download" class="button" hidden>Download patch</a>
+    </div>
+    <p class="muted small">The patch can only be downloaded after you approve it. Nothing is applied anywhere.</p>
+  </section>
+
+  <section class="card" id="history" hidden>
+    <h2>Your recent tasks</h2>
+    <ul id="history-list" class="history"></ul>
+  </section>
+</main>
+
+<footer class="foot muted small">Sandbox: gVisor (runsc) · no network · read-only root · memory, CPU and process limits · destroyed after every task.</footer>
+<script src="app.js"></script>
+</body>
+</html>

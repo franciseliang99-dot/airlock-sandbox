@@ -1,0 +1,42 @@
+# 结构性保护:作品仓 governance=open,内容会被推上公开平台。
+# 这里 ignore 的不是"临时文件",是"绝不能出门的东西"。
+# ⚠ .gitignore 只挡【未跟踪】的文件 —— 已经 commit 进历史的东西它管不着,
+#    而 push 发的是历史不是 HEAD。它是第一道,不是唯一一道。
+# 最后一节之前的部分是各作品仓共用的模板(照工作区根上那份改写);
+# 本作品自己的构建产物只加在最后一节。
+
+# 任何形式的凭据
+# ⚠ token* 也会挡住 tokenizer 这类文件名:git add 会报它被忽略,
+#    确认不是凭据再 git add -f。
+*.key
+*.pem
+*.p12
+.env
+.env.*
+credentials*
+secret*
+token*
+
+# 从别处搬进来的东西一律先落这里,人工过目后才移出来
+/quarantine/
+
+# 本地草稿与实验
+/scratch/
+*.local.md
+
+# 合约构建产物 —— 它们内嵌本机绝对路径(不是合约作品也留着,无害)
+# ⚠ 但 .gitignore 挡不住隔离闸:闸【不看 .gitignore】,扫的是整棵工作树。
+#    所以本机跑 forge 一律把产物导到仓外。
+out/
+cache/
+broadcast/
+
+# 系统噪音
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+# `pip install -e .` 在源树里长出来的东西(SOURCES.txt 会列出本机路径)
+*.egg-info/
+
+# 本作品自己的构建产物(vultr-agent-rush:暂无)

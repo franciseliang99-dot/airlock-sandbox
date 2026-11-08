@@ -1,0 +1,40 @@
+# Airlock on one Vultr VM: Caddy terminates TLS, serves web/ and proxies /api to
+# the service on loopback. bootstrap.sh replaces __HOST__.
+{
+	servers {
+		timeouts {
+			# The service's socket timeout bounds each read, not a whole request,
+			# so slow senders are cut off here.
+			read_header 5s
+			read_body 10s
+			write 60s
+			idle 60s
+		}
+	}
+}
+
+__HOST__ {
+	encode gzip
+
+	handle /api/* {
+		request_body {
+			max_size 16KB
+		}
+		# Caddy replaces any client-sent X-Forwarded-For with the real peer address
+		# (no trusted_proxies configured), which the service uses for rate limits.
+		reverse_proxy 127.0.0.1:8080
+	}
+
+	handle {
+		root * /opt/airlock/web
+		try_files {path} /index.html
+		file_server
+	}
+
+	header {
+		Strict-Transport-Security "max-age=31536000"
+		X-Content-Type-Options nosniff
+		Referrer-Policy no-referrer
+		-Server
+	}
+}

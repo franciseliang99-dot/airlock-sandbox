@@ -1,0 +1,588 @@
+{
+  "schema": 3,
+  "entry_id": "entries/vultr-agent-rush",
+  "source": "entry-repo",
+  "signature_digest": "e33960cb25a27f0b6533465fb62e770ebc02d2a77c5c017eecd8873035bcb8f6",
+  "file_count": 65,
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "f1588d424225213bb4135a00cb13bbeceb689ec765063457e0d192af6505d798",
+      "rule": "exact-file",
+      "keys": [
+        ".gitignore"
+      ]
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "cbb1a65b31e7e951f0749e5cc7e3ce18167c60149291fdba984bf511d7f5c340",
+      "rule": "exact-file",
+      "keys": [
+        "LICENSE"
+      ]
+    },
+    {
+      "path": "README.md",
+      "sha256": "d0db6956a62d076ae4a55696407583cf638e8bbcc628e75f19b0131edd626f16",
+      "rule": "exact-file",
+      "keys": [
+        "README.md"
+      ]
+    },
+    {
+      "path": "airlock/__init__.py",
+      "sha256": "4270a7e6eac072decbb626e6e41d69bf08b903f6ac577681d9006ba1ad626174",
+      "rule": "dir-code-ext",
+      "keys": [
+        "airlock/",
+        ".py"
+      ]
+    },
+    {
+      "path": "airlock/agent/__init__.py",
+      "sha256": "82055827422a4c8e6117860698f0fd56c89db87fccf26200479d15625d3f3267",
+      "rule": "dir-code-ext",
+      "keys": [
+        "airlock/",
+        ".py"
+      ]
+    },
+    {
+      "path": "airlock/agent/client.py",
+      "sha256": "45b15ae42f0b3aeb48fd79a6728345eba1440b045a2f973d0147c8a496bf9561",
+      "rule": "dir-code-ext",
+      "keys": [
+        "airlock/",
+        ".py"
+      ]
+    },
+    {
+      "path": "airlock/agent/contract.py",
+      "sha256": "0f685485f29269e5a9bf12e8534c0f18e68e8d8707442b9be8ea8d07ae8ec9c7",
+      "rule": "dir-code-ext",
+      "keys": [
+        "airlock/",
+        ".py"
+      ]
+    },
+    {
+      "path": "airlock/agent/events.py",
+      "sha256": "231f3498f386e8f82806956727675297727a16f73e4918ac3857b68d124c8cb6",
+      "rule": "dir-code-ext",
+      "keys": [
+        "airlock/",
+        ".py"
+      ]
+    },
+    {
+      "path": "airlock/agent/history.py",
+      "sha256": "ff76b3db0612a7b609bf8cc96af8a08218cd3dbdbdd2b10e779b93aadfea2bcc",
+      "rule": "dir-code-ext",
+      "keys": [
+        "airlock/",
+        ".py"
+      ]
+    },
+    {
+      "path": "airlock/agent/loop.py",
+      "sha256": "4e4d824dbbfa3a65a6d2934fe236b87d5cff4905fbddc8a01bfdaa53767b7c45",
+      "rule": "dir-code-ext",
+      "keys": [
+        "airlock/",
+        ".py"
+      ]
+    },
+    {
+      "path": "airlock/agent/parse.py",
+      "sha256": "28ef3b6a34facb35aede52dc4d4cd7979cc702745f4614571c9163cb9394ab88",
+      "rule": "dir-code-ext",
+      "keys": [
+        "airlock/",
+        ".py"
+      ]
+    },
+    {
+      "path": "airlock/agent/prompt.py",
+      "sha256": "c52a94ec591ce4340002e4d4814f5660ffad8d6e48195ef13c2f27d24162399f",
+      "rule": "dir-code-ext",
+      "keys": [
+        "airlock/",
+        ".py"
+      ]
+    },
+    {
+      "path": "airlock/sandbox/__init__.py",
+      "sha256": "ebef16ab022be6ef3303e172017d272e56de156c7de8942d7a5972156fb9609c",
+      "rule": "dir-code-ext",
+      "keys": [
+        "airlock/",
+        ".py"
+      ]
+    },
+    {
+      "path": "airlock/sandbox/_argv.py",
+      "sha256": "ff90c896b9413fbd8c86193fcce5580fcdf8d0ec4ed1eeddb11a5e65e8fbd8ba",
+      "rule": "dir-code-ext",
+      "keys": [
+        "airlock/",
+        ".py"
+      ]
+    },
+    {
+      "path": "airlock/sandbox/_consts.py",
+      "sha256": "753767d57d2ef656889503c041f716a6e194c525adffc514a1827e4b39949a94",
+      "rule": "dir-code-ext",
+      "keys": [
+        "airlock/",
+        ".py"
+      ]
+    },
+    {
+      "path": "airlock/sandbox/_diff.py",
+      "sha256": "50ffdd6906e3409f5aaf122393a4041b881aa6c7e0a6f52f34856c4eb62f6edf",
+      "rule": "dir-code-ext",
+      "keys": [
+        "airlock/",
+        ".py"
+      ]
+    },
+    {
+      "path": "airlock/sandbox/_policy.py",
+      "sha256": "46434c7540228a1054d215fbee1ca723bb06285c8ef4bfbaeb0c849f8f7cc3c5",
+      "rule": "dir-code-ext",
+      "keys": [
+        "airlock/",
+        ".py"
+      ]
+    },
+    {
+      "path": "airlock/sandbox/_proc.py",
+      "sha256": "a81f55c16e5517e31f96176e77f9ad48806f312674c290bbc640ad8b0be1c30c",
+      "rule": "dir-code-ext",
+      "keys": [
+        "airlock/",
+        ".py"
+      ]
+    },
+    {
+      "path": "airlock/sandbox/_scripts.py",
+      "sha256": "b5c9b78215ac4091c968ddff0abee3a7a6309ced3783a1c582bae736f2e91fd1",
+      "rule": "dir-code-ext",
+      "keys": [
+        "airlock/",
+        ".py"
+      ]
+    },
+    {
+      "path": "airlock/sandbox/_seed.py",
+      "sha256": "fbb2b860f1b2c0977ce5796e6a3aae5bdc67d40ac3bec1f519bfbd7d05b78eae",
+      "rule": "dir-code-ext",
+      "keys": [
+        "airlock/",
+        ".py"
+      ]
+    },
+    {
+      "path": "airlock/sandbox/runner.py",
+      "sha256": "25b2342f072cd9bf5ddeda50f094296e2584d9e3b872b83202a3da68909f4548",
+      "rule": "dir-code-ext",
+      "keys": [
+        "airlock/",
+        ".py"
+      ]
+    },
+    {
+      "path": "airlock/service/__init__.py",
+      "sha256": "8ffe761bd748d6513c012dc6eea4e63afce46b53646493f2c0ef4f03207f03ce",
+      "rule": "dir-code-ext",
+      "keys": [
+        "airlock/",
+        ".py"
+      ]
+    },
+    {
+      "path": "airlock/service/__main__.py",
+      "sha256": "d3f3596a3cd4180517ce74f2df6e059cfb0be7b8b62268f2c3bf32f324ed748c",
+      "rule": "dir-code-ext",
+      "keys": [
+        "airlock/",
+        ".py"
+      ]
+    },
+    {
+      "path": "airlock/service/accounting.py",
+      "sha256": "16d5c9287af77479cfd426f7ef6e1e1754d0368684184c588b2d0cf813f9d699",
+      "rule": "dir-code-ext",
+      "keys": [
+        "airlock/",
+        ".py"
+      ]
+    },
+    {
+      "path": "airlock/service/admin.py",
+      "sha256": "478736752c087046f10ac78aedd2c086a3928f2d2a6923b766372e78b9e1f85e",
+      "rule": "dir-code-ext",
+      "keys": [
+        "airlock/",
+        ".py"
+      ]
+    },
+    {
+      "path": "airlock/service/app.py",
+      "sha256": "2eec90d5d8dc8156a10f1debf26f74ce2275d33b48a5486d52e694703fded5be",
+      "rule": "dir-code-ext",
+      "keys": [
+        "airlock/",
+        ".py"
+      ]
+    },
+    {
+      "path": "airlock/service/clock.py",
+      "sha256": "675122f2d0b68c63c9a0737e8118cc6d7ae718384f9ee19cf8003d2b1e2f8109",
+      "rule": "dir-code-ext",
+      "keys": [
+        "airlock/",
+        ".py"
+      ]
+    },
+    {
+      "path": "airlock/service/config.py",
+      "sha256": "e78dbbbbc7152c420529f07104a1f5a47406f403617cb1f75ffe61b1368f03b6",
+      "rule": "dir-code-ext",
+      "keys": [
+        "airlock/",
+        ".py"
+      ]
+    },
+    {
+      "path": "airlock/service/docker_ops.py",
+      "sha256": "94f6e0b11a3346517952041bf1d325dfa16ad2dd563dcf9166c871a27e65ed03",
+      "rule": "dir-code-ext",
+      "keys": [
+        "airlock/",
+        ".py"
+      ]
+    },
+    {
+      "path": "airlock/service/execution.py",
+      "sha256": "75f040979ce17fa9cd8fb755b73ababb18e1a8288196db514d8443fe08ae6dca",
+      "rule": "dir-code-ext",
+      "keys": [
+        "airlock/",
+        ".py"
+      ]
+    },
+    {
+      "path": "airlock/service/httpapi.py",
+      "sha256": "a483ab5394de40439637d7d4dd0c31646c040b11adfa47ff89a6388a191831c8",
+      "rule": "dir-code-ext",
+      "keys": [
+        "airlock/",
+        ".py"
+      ]
+    },
+    {
+      "path": "airlock/service/manifest.py",
+      "sha256": "3d8fce65d02709401c955fb715d609d42f3eac0598d7d1407979f7aa4aaf6ea5",
+      "rule": "dir-code-ext",
+      "keys": [
+        "airlock/",
+        ".py"
+      ]
+    },
+    {
+      "path": "airlock/service/ratelimit.py",
+      "sha256": "e1418206a6e43e20ffb6238acf30738c8acebb7dc864f487cab99fbc6abd0916",
+      "rule": "dir-code-ext",
+      "keys": [
+        "airlock/",
+        ".py"
+      ]
+    },
+    {
+      "path": "airlock/service/scheduler.py",
+      "sha256": "d8e7c27048c37fd0cb8c86e0120f7eb4a7257918018ef147b0c03a60ea1cb11d",
+      "rule": "dir-code-ext",
+      "keys": [
+        "airlock/",
+        ".py"
+      ]
+    },
+    {
+      "path": "airlock/service/store.py",
+      "sha256": "afb0e45b3b180842f2c5734459bd97e3f3c076dd8202dfd8229551aa55fb7da2",
+      "rule": "dir-code-ext",
+      "keys": [
+        "airlock/",
+        ".py"
+      ]
+    },
+    {
+      "path": "deploy/Caddyfile",
+      "sha256": "9d343ef329702715aa7eef7498bae7a21ee77fb47075b2a6c8586e22142e0bf2",
+      "rule": "exact-file",
+      "keys": [
+        "deploy/Caddyfile"
+      ]
+    },
+    {
+      "path": "deploy/DEPLOY.md",
+      "sha256": "6d5e87f7c19f26efb5f0dc76ade2fbb93521e2e73a8a6e4078f39369d557dd9c",
+      "rule": "dir-code-ext",
+      "keys": [
+        "deploy/",
+        ".md"
+      ]
+    },
+    {
+      "path": "deploy/airlock.service",
+      "sha256": "52feb1ad14f68f8acfb1188f779edd26b9125be629ba045b49f94db2c0203c29",
+      "rule": "exact-file",
+      "keys": [
+        "deploy/airlock.service"
+      ]
+    },
+    {
+      "path": "deploy/bootstrap.sh",
+      "sha256": "fbcdc715616561ab0abe42c212a479f02dd6576daff25e4a69b10b831bb1cba5",
+      "rule": "dir-code-ext",
+      "keys": [
+        "deploy/",
+        ".sh"
+      ]
+    },
+    {
+      "path": "deploy/config.template.json",
+      "sha256": "70db4fc5c9725de4187494984dcc089b0cd6046634a40db9fddff0468628e934",
+      "rule": "dir-code-ext",
+      "keys": [
+        "deploy/",
+        ".json"
+      ]
+    },
+    {
+      "path": "samples/calc/README.md",
+      "sha256": "b9fe6aadfd0ec63a1791d98e24e4536e2330a663d09e3fb326079aa99acddc58",
+      "rule": "dir-code-ext",
+      "keys": [
+        "samples/",
+        ".md"
+      ]
+    },
+    {
+      "path": "samples/calc/calc.py",
+      "sha256": "744f6295ca91e19513b6edbd022316201359df7ff61785e583931b99592d9481",
+      "rule": "dir-code-ext",
+      "keys": [
+        "samples/",
+        ".py"
+      ]
+    },
+    {
+      "path": "samples/calc/test_calc.py",
+      "sha256": "8fcb56fe3d01b662aed98dbec7d883de5d0e0bccd13f776a1a6904139555a57a",
+      "rule": "dir-code-ext",
+      "keys": [
+        "samples/",
+        ".py"
+      ]
+    },
+    {
+      "path": "samples/manifest.json",
+      "sha256": "cf742c905cdde49f1063c426c9eee4e969c7f8e63c1b60a065ef2be0f7843987",
+      "rule": "dir-code-ext",
+      "keys": [
+        "samples/",
+        ".json"
+      ]
+    },
+    {
+      "path": "samples/wordcount/README.md",
+      "sha256": "1f705a11ef9745a2ed63924e5dd1d3f45bee4fd2e348900fd32635ff1472a8ef",
+      "rule": "dir-code-ext",
+      "keys": [
+        "samples/",
+        ".md"
+      ]
+    },
+    {
+      "path": "samples/wordcount/test_wordcount.py",
+      "sha256": "084e6f972fdc97c13ac472580b8917340f989b7d3319422c08ca466b28b4f1a6",
+      "rule": "dir-code-ext",
+      "keys": [
+        "samples/",
+        ".py"
+      ]
+    },
+    {
+      "path": "samples/wordcount/wordcount.py",
+      "sha256": "d5be18d4464f3d996a77f570730c918c75c95172160459d8b48363bb0c8fcf06",
+      "rule": "dir-code-ext",
+      "keys": [
+        "samples/",
+        ".py"
+      ]
+    },
+    {
+      "path": "sandbox-image/.dockerignore",
+      "sha256": "cdbcae15105d6b781e620813c79c7e868740d4e9cc53ce6f5fcbbc12387adf4b",
+      "rule": "dir-dotfile",
+      "keys": [
+        "sandbox-image/",
+        ".dockerignore"
+      ]
+    },
+    {
+      "path": "sandbox-image/Dockerfile",
+      "sha256": "9460a36c991a8b7ba041dcc93bc7990c2f2045a2356907da1179b65f62da8ab6",
+      "rule": "exact-file",
+      "keys": [
+        "sandbox-image/Dockerfile"
+      ]
+    },
+    {
+      "path": "tests/__init__.py",
+      "sha256": "51ebdeda660de8a3593e15d3717d62ede7d13dc0e348ba0d1a3255e6188ce886",
+      "rule": "dir-code-ext",
+      "keys": [
+        "tests/",
+        ".py"
+      ]
+    },
+    {
+      "path": "tests/agent_fakes.py",
+      "sha256": "7e2756bbb87b1dcb3591e3d30fb35ec1b865eef01189278471823d28d0cb1c6a",
+      "rule": "dir-code-ext",
+      "keys": [
+        "tests/",
+        ".py"
+      ]
+    },
+    {
+      "path": "tests/fake_docker.py",
+      "sha256": "8a0d6c2c8f80b4793692248cbeb6e9d0c2e145937fb4b0d19e72fc8e8047538a",
+      "rule": "dir-code-ext",
+      "keys": [
+        "tests/",
+        ".py"
+      ]
+    },
+    {
+      "path": "tests/service_fakes.py",
+      "sha256": "3fa78cb0ddf53c7b6ced680792a95139bc35bfe8f87a6e2437466133a2b555fa",
+      "rule": "dir-code-ext",
+      "keys": [
+        "tests/",
+        ".py"
+      ]
+    },
+    {
+      "path": "tests/test_agent_client.py",
+      "sha256": "bec3df968ce441ba8bd0b89dfdbfeab93424e3c89bfdeb96de4e881ed7fa9b02",
+      "rule": "dir-code-ext",
+      "keys": [
+        "tests/",
+        ".py"
+      ]
+    },
+    {
+      "path": "tests/test_agent_integration.py",
+      "sha256": "5ace1a9d081e7d283906e3c2192191de5e328c3ca18a369bc6707923a9b77b3a",
+      "rule": "dir-code-ext",
+      "keys": [
+        "tests/",
+        ".py"
+      ]
+    },
+    {
+      "path": "tests/test_agent_unit.py",
+      "sha256": "34567a7cdcdc58a2150892c4ba4c970b2ff08ebedf83da8091ac581af527d920",
+      "rule": "dir-code-ext",
+      "keys": [
+        "tests/",
+        ".py"
+      ]
+    },
+    {
+      "path": "tests/test_sandbox_integration.py",
+      "sha256": "19d777e078b9d506504c896521c9d6d79c8b7b41690a15fffd86d92b1604722c",
+      "rule": "dir-code-ext",
+      "keys": [
+        "tests/",
+        ".py"
+      ]
+    },
+    {
+      "path": "tests/test_sandbox_unit.py",
+      "sha256": "2117804726e3dd2a4f34dcdf97443f4a181e9a65b02e1c9cc9f8da24b3e253fe",
+      "rule": "dir-code-ext",
+      "keys": [
+        "tests/",
+        ".py"
+      ]
+    },
+    {
+      "path": "tests/test_service_concurrency.py",
+      "sha256": "5fbcc30c99bd9f052b2b399eecd3125f7f7f4d69b167fc548302e983bac45c9c",
+      "rule": "dir-code-ext",
+      "keys": [
+        "tests/",
+        ".py"
+      ]
+    },
+    {
+      "path": "tests/test_service_http.py",
+      "sha256": "178ab06af44ebbf26a50507075901c834c28f3f8de69fb119dd1718c35c31ee3",
+      "rule": "dir-code-ext",
+      "keys": [
+        "tests/",
+        ".py"
+      ]
+    },
+    {
+      "path": "tests/test_service_integration.py",
+      "sha256": "fa320f808fb33df5d6b66021405b9c6758b2168c1383d6fbbbf5d6f661e2f0f4",
+      "rule": "dir-code-ext",
+      "keys": [
+        "tests/",
+        ".py"
+      ]
+    },
+    {
+      "path": "tests/test_service_unit.py",
+      "sha256": "dc3431e50fc493fcafdb4c042122a055695b515c3b74c6c1c16b70f611f38290",
+      "rule": "dir-code-ext",
+      "keys": [
+        "tests/",
+        ".py"
+      ]
+    },
+    {
+      "path": "web/app.js",
+      "sha256": "e7dfb0d55dfe6ee527da8b217d58d02cd0def9625ee260222b745bce59531653",
+      "rule": "dir-code-ext",
+      "keys": [
+        "web/",
+        ".js"
+      ]
+    },
+    {
+      "path": "web/index.html",
+      "sha256": "604895242337ee38e8e56c829970f95d4880462751878bc0bdfd2a4dc6c37ca1",
+      "rule": "dir-code-ext",
+      "keys": [
+        "web/",
+        ".html"
+      ]
+    },
+    {
+      "path": "web/style.css",
+      "sha256": "3e694014dcb70ad07f63beaf53ddeadcf72410f69b2bcbf2c44530aae8f136f2",
+      "rule": "dir-code-ext",
+      "keys": [
+        "web/",
+        ".css"
+      ]
+    }
+  ]
+}
